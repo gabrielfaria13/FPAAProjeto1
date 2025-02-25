@@ -183,5 +183,6 @@ Onde:
 
 Aqui está o diagrama do fluxo do algoritmo de Karatsuba:
 
-![image](https://github.com/user-attachments/assets/2b3dd5d8-f0e2-4f3a-8754-4e3b7bda1223)
+![image](https://github.com/user-attachments/assets/42578bf9-de72-48ed-9d00-b187af53b06b)
+
 
