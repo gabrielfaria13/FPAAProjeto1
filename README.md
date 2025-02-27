@@ -154,13 +154,22 @@ Com as três multiplicações menores (`z0`, `z1`, `z2`), o produto final é obt
 x * y = (z2 * 10^{2m}) + ((z1 - z2 - z0) * 10^m) + z0
 \]
 
+## Análise Técnica
 ## Complexidade Assintótica
 
-O algoritmo de Karatsuba tem uma complexidade temporal de **O(n^log₂3) ≈ O(n^1.585)**, onde `n` é o número de dígitos dos números de entrada. Em comparação com a multiplicação convencional, que tem complexidade **O(n²)**, o algoritmo de Karatsuba é consideravelmente mais rápido para números grandes.
+### Melhor Caso (O(1))
 
-## Análise Técnica
+- Ocorre quando pelo menos um dos números tem apenas um dígito.  
+- Como a multiplicação direta é aplicada, o tempo de execução é constante.  
 
-### Complexidade Ciclomática
+### Caso Médio e Pior Caso (O(n^log₂3) ≈ O(n^1.585))
+
+- Ocorre quando os números têm um número grande de dígitos e precisam ser divididos recursivamente.  
+- O algoritmo segue a recorrência: 
+
+
+
+## Complexidade Ciclomática
 
 A complexidade ciclomática mede a complexidade do fluxo de controle do algoritmo, levando em consideração a quantidade de decisões e ramificações. Para o algoritmo de Karatsuba, a complexidade ciclomática pode ser calculada usando a fórmula:
 
@@ -173,11 +182,19 @@ Onde:
 - **N** é o número de nós no grafo de controle.
 - **P** é o número de componentes conexos (para um único programa, **P = 1**).
 
-### Casos de Complexidade
 
-- **Melhor Caso**: Quando os números são pequenos e a multiplicação direta é aplicada.
-- **Caso Médio**: Quando os números têm tamanho semelhante, o algoritmo tem desempenho ótimo.
-- **Pior Caso**: Quando os números são de tamanhos muito diferentes, a divisão pode ser desbalanceada, mas ainda assim o algoritmo é mais eficiente do que a multiplicação direta.
+Com base no fluxo do algoritmo de Karatsuba:
+
+- **E = 10** (arestas)  
+- **N = 8** (nós)  
+- **P = 1** (componente conexo)  
+
+Substituindo os valores na fórmula:
+
+V(G) = 10 - 8 + 2(1) V(G) = 4
+
+
+Portanto, a complexidade ciclomática do algoritmo de Karatsuba é **4**, indicando que existem **4 caminhos independentes** no fluxo de controle do programa.
 
 ## Diagrama
 
