@@ -44,9 +44,6 @@ x * y = (z2 * 10^{2m}) + ((z1 - z2 - z0) * 10^m) + z0
 
 ```python
 def karatsuba(x, y): 
-    """
-    Implementação do algoritmo de Karatsuba para multiplicação eficiente de números inteiros.
-    """
     # Caso base: números pequenos multiplicados diretamente
     if x < 10 or y < 10:
         return x * y
@@ -198,8 +195,9 @@ Portanto, a complexidade ciclomática do algoritmo de Karatsuba é **4**, indica
 
 ## Diagrama
 
-Aqui está o diagrama do fluxo do algoritmo de Karatsuba:
+ Grafo de fluxo de controle:
 
-![image](https://github.com/user-attachments/assets/42578bf9-de72-48ed-9d00-b187af53b06b)
+![image](https://github.com/user-attachments/assets/0fdc0a4e-33a4-49f0-b7a0-380041901548)
+
 
 
