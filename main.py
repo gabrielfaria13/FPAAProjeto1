@@ -1,7 +1,4 @@
 def karatsuba(x, y):
-    """
-    Implementação do algoritmo de Karatsuba para multiplicação eficiente de números inteiros.
-    """
     if x < 10 or y < 10:
         return x * y
     
